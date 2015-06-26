@@ -8,8 +8,6 @@ import static support.Helpers.find_element;
  * Created by tieuthanh on 25/06/2015.
  */
 public class HomePage {
-    By homePageTitle = By.xpath("//head/title");
-    String homePageTxt = "Shop Nhất - Hàng xách tay Nhật, Mỹ phẩm, Thực phẩm chức năng, Tất, Quần áo, Rượu, Sữa, Gia dụng";
 
     By homePageBtn = By.xpath("//div[3]/div/ul/li[4]/a");
     By newsPageBtn = By.xpath("//div[3]/div/ul/li[3]/a");
@@ -17,12 +15,8 @@ public class HomePage {
     By contactPageBtn = By.xpath("//div[3]/div/ul/li[1]/a");
     By getInfoForm = By.xpath("//div[5]/div[1]/div[6]");
     By product = By.id("ProductImages");
-    By searchTxtBox= By.xpath("//*[@id=['frmKeywordSearch']/div/div[1]");
+    By searchTxtBox= By.xpath("//*[@id='frmKeywordSearch']/div/div[1]");
 
-    public Boolean homePageLoaded() {
-        return find_element(homePageTitle).getText().equals(homePageTxt);
-
-    }
 
     public void gotohomePage() {
         find_element(homePageBtn).click();

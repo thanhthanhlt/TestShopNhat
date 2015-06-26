@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="1.742" tests="4" errors="0" skipped="2" failures="2">
+<testsuite name="TestSuite" time="0.383" tests="1" errors="0" skipped="0" failures="1">
   <properties>
     <property name="idea.version" value="14.1.3"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/home/tieuthanh/Downloads/TopNhatSite"/>
+    <property name="user.dir" value="/home/tieuthanh/source/TestShopNhat"/>
     <property name="java.runtime.version" value="1.8.0_45-b14"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="/home/tieuthanh/Downloads/jdk1.8.0_45/jre/lib/endorsed"/>
@@ -61,28 +61,24 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="test_SearchForm" classname="testcases.TestSearchForm" time="1.059">
-    <skipped/>
-  </testcase>
-  <testcase name="test_PriceDDList" classname="testcases.TestGetPriceDDList" time="0.232">
-    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertEquals(Assert.java:123)
-	at org.testng.Assert.assertEquals(Assert.java:165)
-	at testcases.TestGetPriceDDList.test_PriceDDList(TestGetPriceDDList.java:16)
-</failure>
-  </testcase>
-  <testcase name="test_DetailProPage" classname="testcases.TestDetailsProduct" time="0.166">
-    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertEquals(Assert.java:123)
-	at org.testng.Assert.assertEquals(Assert.java:165)
-	at testcases.TestDetailsProduct.test_DetailProPage(TestDetailsProduct.java:16)
-</failure>
-  </testcase>
-  <testcase name="test_GetInfoForm" classname="testcases.TestGetInfo" time="0.285">
-    <skipped/>
+  <testcase name="test_SearchForm" classname="testcases.TestSearchForm" time="0.383">
+    <failure message="The given selector //*[@id=[&apos;frmKeywordSearch&apos;]/div/div[1] is either invalid or does not result in a WebElement. The following error occurred:&#10;InvalidSelectorError: Unable to locate an element with the xpath expression //*[@id=[&apos;frmKeywordSearch&apos;]/div/div[1] because of the following error:&#10;SyntaxError: The expression is not a legal expression.&#10;Command duration or timeout: 93 milliseconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html&#10;Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;&#10;System info: host: &apos;tieuthanh-ubuntu&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-46-generic&apos;, java.version: &apos;1.8.0_45&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=36.0.1, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]&#10;Session ID: 7256d483-267e-4559-9f4e-9c2beefe60a7&#10;*** Element info: {Using=xpath, value=//*[@id=[&apos;frmKeywordSearch&apos;]/div/div[1]}" type="org.openqa.selenium.InvalidSelectorException"><![CDATA[org.openqa.selenium.InvalidSelectorException: The given selector //*[@id=['frmKeywordSearch']/div/div[1] is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: Unable to locate an element with the xpath expression //*[@id=['frmKeywordSearch']/div/div[1] because of the following error:
+SyntaxError: The expression is not a legal expression.
+Command duration or timeout: 93 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'tieuthanh-ubuntu', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-46-generic', java.version: '1.8.0_45'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=36.0.1, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 7256d483-267e-4559-9f4e-9c2beefe60a7
+*** Element info: {Using=xpath, value=//*[@id=['frmKeywordSearch']/div/div[1]}
+	at <anonymous class>.FirefoxDriver.annotateInvalidSelectorError_(file:///tmp/anonymous6487635710333378360webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10245)
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///tmp/anonymous6487635710333378360webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10276)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///tmp/anonymous6487635710333378360webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10280)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///tmp/anonymous6487635710333378360webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///tmp/anonymous6487635710333378360webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///tmp/anonymous6487635710333378360webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+]]></failure>
   </testcase>
 </testsuite>

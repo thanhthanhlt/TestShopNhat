@@ -12,8 +12,8 @@ import static support.Helpers.find_element;
  * Created by tieuthanh on 25/06/2015.
  */
 public class GetPriceDDList {
-    By priceDDList = By.xpath("//*[@id=['frmKeywordSearch']/div/div[1]/select");
-    By price = By.xpath("//*[@id=['frmKeywordSearch']/div/div[1]/select/option[1]");
+    By priceDDList = By.xpath("//*[@id='frmKeywordSearch']/div/div[1]/select");
+    By price = By.xpath("//*[@id='frmKeywordSearch']/div/div[1]/select/option[1]");
     String priceTxt = "Giá bán";
 
     public Boolean getPrDDList(){

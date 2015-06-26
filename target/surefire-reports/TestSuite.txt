@@ -1,20 +1,23 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 2, Errors: 0, Skipped: 2, Time elapsed: 81.54 sec <<< FAILURE!
-test_PriceDDList(testcases.TestGetPriceDDList)  Time elapsed: 0.232 sec  <<< FAILURE!
-java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertEquals(Assert.java:123)
-	at org.testng.Assert.assertEquals(Assert.java:165)
-	at testcases.TestGetPriceDDList.test_PriceDDList(TestGetPriceDDList.java:16)
-
-test_DetailProPage(testcases.TestDetailsProduct)  Time elapsed: 0.166 sec  <<< FAILURE!
-java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertEquals(Assert.java:123)
-	at org.testng.Assert.assertEquals(Assert.java:165)
-	at testcases.TestDetailsProduct.test_DetailProPage(TestDetailsProduct.java:16)
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 23.45 sec <<< FAILURE!
+test_SearchForm(testcases.TestSearchForm)  Time elapsed: 0.383 sec  <<< FAILURE!
+org.openqa.selenium.InvalidSelectorException: The given selector //*[@id=['frmKeywordSearch']/div/div[1] is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: Unable to locate an element with the xpath expression //*[@id=['frmKeywordSearch']/div/div[1] because of the following error:
+SyntaxError: The expression is not a legal expression.
+Command duration or timeout: 93 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'tieuthanh-ubuntu', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-46-generic', java.version: '1.8.0_45'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=36.0.1, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 7256d483-267e-4559-9f4e-9c2beefe60a7
+*** Element info: {Using=xpath, value=//*[@id=['frmKeywordSearch']/div/div[1]}
+	at <anonymous class>.FirefoxDriver.annotateInvalidSelectorError_(file:///tmp/anonymous6487635710333378360webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10245)
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///tmp/anonymous6487635710333378360webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10276)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///tmp/anonymous6487635710333378360webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10280)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///tmp/anonymous6487635710333378360webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///tmp/anonymous6487635710333378360webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///tmp/anonymous6487635710333378360webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
 
