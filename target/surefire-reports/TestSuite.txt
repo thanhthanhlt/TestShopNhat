@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 2, Time elapsed: 81.54 sec <<< FAILURE!
+test_PriceDDList(testcases.TestGetPriceDDList)  Time elapsed: 0.232 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:165)
+	at testcases.TestGetPriceDDList.test_PriceDDList(TestGetPriceDDList.java:16)
+
+test_DetailProPage(testcases.TestDetailsProduct)  Time elapsed: 0.166 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:165)
+	at testcases.TestDetailsProduct.test_DetailProPage(TestDetailsProduct.java:16)
+
